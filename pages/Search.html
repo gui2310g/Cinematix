@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematix</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/Search.css">
+</head>
+<body>
+    <header>     
+        <nav id="navbar">
+        <a href="/index.html"><h2>Cinematix</h2></a>    
+
+            <form id="form">
+                <input type="text" placeholder="Search a movie">
+                <button type="submit" id="button"><img src="/imgs/search.png" alt="img button" id="img-button"></button>
+            </form>
+        </nav>
+    </header>
+
+    <div id="title">
+        <script src="/js/formsearch.js"></script>
+    </div>
+
+    <main id="main">
+        <script src="/js/formfetch.js" type="module"></script>
+    </main>
+
+    <footer>
+        <h3>Cinematix</h3>
+        <p>&#64; All rights reserved</p>
+    </footer> 
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const search = document.querySelector('input[type="text"]').value.trim()
+
+        if (search) {
+            window.location.href = `Search.html?q=${encodeURIComponent(search)}`;
+        }
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* global */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #151d26;
+}
+
+h1, h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: #032440;
+    height: 50px;
+    padding-top: 5px;
+    
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    color: rgba(95, 209, 244, 0.985); 
+    
+}
+
+#form {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+#form #button {
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #19CEB6, #12C3C8, #07B7DE);
+    cursor: pointer;
+}
+
+#form #button img {
+    width: 20px;
+}
+#form input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#form input::placeholder {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #52a3ea;
+}
+
+footer {
+    text-align: center;
+    height: 100px;
+    margin-top: 40px;
+    
+}
+
+@media screen and (max-width: 524px) {
+    #navbar {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header {
+        height: 80px;   
+    }
+    
+}

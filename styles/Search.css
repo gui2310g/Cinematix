@@ -1,0 +1,27 @@
+#title {
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    max-width: 1500px;
+    gap: 30px;
+}
+
+
+#main img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 524px) {
+    #main img {
+        width: 100%;
+    }
+}
